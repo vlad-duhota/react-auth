@@ -1,0 +1,90 @@
+.login {
+    min-height: 100vh;
+    min-height: 100cqh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__decor{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@keyframes circle {
+    0% {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
+
+.login__circle {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    background: #4044ED;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    animation: circle 20s ease-in-out infinite;
+}
+
+.login__circle span {
+    display: block;
+    margin-top: 12vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background: #93DFFF;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 375px;
+    width: 100%;
+}
+
+.form [data-lastpass-icon-root] {
+    display: none !important;
+}
+
+.form input {
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-family: inherit;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    outline: none;
+}
+
+.form input::placeholder {
+    color: #999999;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+.form button {
+    border-bottom: 2px solid #fff;
+}
+
+.form__btn_add {
+    cursor: pointer;
+    text-align: right;
+    padding-top: 10px;
+    margin-top: -17px;
+}

@@ -1,13 +1,81 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	/* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace; */
+}
+
+@font-face {
+    font-family: 'JK Abode';
+    font-style: normal;
+    font-weight: normal;
+    src: local('JK Abode Regular Demo'), url('assets/fonts/JKAbode-Demo.woff') format('woff');
+    }
+    
+
+ @font-face {
+    font-family: 'JK Abode';
+    font-style: normal;
+    font-weight: 300;
+    src: local('JK Abode Light Demo'), url('assets/fonts/JKAbode-LightDemo.woff') format('woff');
+}
+
+* {
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'JK Abode';
+	text-transform: uppercase;
+	font-weight: 400;
+}
+h1{
+	font-size: 96px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #27262C;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Roboto';
+	font-weight: 400;
+}
+
+.wrapper {
+	position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.wrapper > * {
+	width: 100%;
+}
+
+.button-primary {
+	padding: 10px;
+	background: #4044ED;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
 }
