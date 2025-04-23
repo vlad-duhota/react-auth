@@ -60,7 +60,7 @@
     display: none !important;
 }
 
-.form input {
+.form input, .form textarea {
     background: transparent;
     color: #fff;
     font-weight: 400;
@@ -70,6 +70,11 @@
     border-bottom: 2px solid #fff;
     width: 100%;
     outline: none;
+}
+
+.form textarea {
+    resize: none;
+    height: 200px;
 }
 
 .form input::placeholder {
@@ -87,4 +92,13 @@
     text-align: right;
     padding-top: 10px;
     margin-top: -17px;
+}
+
+.addpost {
+    min-height: 100vh;
+    min-height: 100cqh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

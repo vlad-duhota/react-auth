@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Home from './components/screens/Home/Home'
+import App from './components/screens/Home/App'
 import Layout from './components/layout/Layout'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { AuthProvider } from './providers/AuthProvider'
@@ -13,7 +13,7 @@ ReactDOM.render(
 		<QueryClientProvider client={queryClient}>
 			<Layout>
 				<AuthProvider>
-					<Home />
+					<App />
 				</AuthProvider>
 			</Layout>
 		</QueryClientProvider>
