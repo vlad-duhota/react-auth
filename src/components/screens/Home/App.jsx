@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { useAuth } from '../../../providers/AuthProvider'
+
 import Auth from '../Auth/Auth'
 import Home from  './Home'
 import AddPost from './AddPost'
+import Post from './Post'
+
 import {
 	createBrowserRouter,
 	RouterProvider,
@@ -16,6 +19,10 @@ import {
 	{
 		path: "/addPost",
 		element: <AddPost />,
+	},
+	{
+		path: "/post/:id",
+		element: <Post />,
 	}
   ])
 

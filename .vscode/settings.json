@@ -1,0 +1,13 @@
+{
+    "vscode_vibrancy.opacity": 0.5,
+    "vscode_vibrancy.enableAutoTheme": true,
+    "vscode_vibrancy.refreshInterval": 1000,
+    "vscode_vibrancy.theme": "GitHub Dark Default",
+    "vscode_vibrancy.preferedDarkTheme": "GitHub Dark Default",
+    "vscode_vibrancy.imports": [
+
+        "/path/to/file"
+    ],
+    "vscode_vibrancy.preventFlash": false,
+    "vscode_vibrancy.type": "auto"
+}

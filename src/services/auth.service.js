@@ -1,21 +1,3 @@
-// import axios from 'axios'
-
-// axios.defaults.baseURL = 'http://localhost:4200/api'
-// axios.defaults.headers = {
-// 	'Content-Type': 'application/json',
-// }
-
-// export const AuthService = {
-// 	async login(email, password) {
-// 		return axios.post('auth/login', { email, password })
-// 	},
-
-// 	async register(email, password) {
-// 		return axios.post('auth/register', { email, password })
-// 	},
-// }
-
-// authService.js
 import axios from 'axios'
 
 axios.defaults.baseURL = 'http://localhost:4200/api'
@@ -46,11 +28,10 @@ export const AuthService = {
 	},
 
 	getProfile() {
-		return axios.get('auth/profile') // must be protected route
+		return axios.get('auth/profile')
 	},
 }
 
-// Helper to set the default auth header
 export function setAuthHeader(token) {
 	axios.defaults.headers.Authorization = `Bearer ${token}`
 }

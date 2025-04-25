@@ -17,19 +17,18 @@ const AddPost = () => {
     const navigate = useNavigate() 
 
     const onSubmit = async (data) => {
-        // console.log(data)
         try {
-			// Відправляємо запит через axios
+
 			const response = await axios.post(
-				'http://localhost:4200/api/blog/create', // URL бекенду
+				'http://localhost:4200/api/blog/create',
 				{
 					title: data.title,
-					content: data.textarea, // Якщо на бекенді це поле називається content
+					content: data.textarea,
 				},
 				{
 					headers: {
 						'Content-Type': 'application/json',
-						Authorization: `Bearer ${accessToken}`, // Токен для автентифікації
+						Authorization: `Bearer ${accessToken}`, 
 					},
 				}
 			)
